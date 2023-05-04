@@ -711,9 +711,10 @@ div#myTable_paginate {
     color: #18181B;
 }
 
-.table-wrapper.table-responsive {
-    overflow: auto;
-}
+ .table-wrapper.table-responsive {
+     overflow: auto;
+     padding: 20px 0;
+ }
 
 @media only screen and (min-width: 1920px) {
     .salary-hero {
@@ -731,11 +732,6 @@ div#myTable_paginate {
         font-size: 37px;
         line-height: 40px;
         margin-bottom: 12px;
-    }
-
-    .table-wrapper.table-responsive {
-        overflow: auto;
-        padding: 20px 0;
     }
 
     .block__left,
