@@ -292,6 +292,7 @@ ul {
     display: flex;
     gap: 16px;
 }
+
 #form-year {
     width: 100%;
     padding: 10px;
@@ -306,6 +307,7 @@ ul {
     line-height: 17px;
     color: #27272A;
 }
+
 .input-field input {
     padding: 12px;
     background: #FFFFFF;
@@ -372,6 +374,7 @@ ul {
     position: relative;
     z-index: 10;
 }
+
 .table-action {
     background: #FFF5E0;
     border-radius: 4px;
@@ -527,6 +530,7 @@ div#myTable_paginate {
     color: #6B7280;
     margin-left: 4px;
 }
+
 .table-text {
     margin-bottom: -30px;
     font-style: normal;
@@ -538,6 +542,7 @@ div#myTable_paginate {
     z-index: 5;
     padding-left: 24px;
 }
+
 /* detail page  */
 
 .block-middle__info {
@@ -701,8 +706,13 @@ div#myTable_paginate {
     align-items: center;
     color: #18181B;
 }
-.detail-block .detail-block__row:nth-child(odd) .detail-block__subtitle{
+
+.detail-block .detail-block__row:nth-child(odd) .detail-block__subtitle {
     color: #18181B;
+}
+
+.table-wrapper.table-responsive {
+    overflow: auto;
 }
 
 @media only screen and (min-width: 1920px) {
@@ -722,16 +732,25 @@ div#myTable_paginate {
         line-height: 40px;
         margin-bottom: 12px;
     }
-}
 
-@media only screen and (max-width: 1024px) {
-    .section-footer {
-        padding: 60px 0;
+    .table-wrapper.table-responsive {
+        overflow: auto;
+        padding: 20px 0;
     }
 
     .block__left,
     .block__right {
         display: none;
+    }
+
+    .block {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .section-footer {
+        padding: 60px 0;
     }
 }
 
@@ -850,6 +869,18 @@ div#myTable_paginate {
     .wage-block__row {
         gap: 5px;
     }
+
+    div#myTable_filter {
+        text-align: right;
+    }
+
+    #myTable_paginate {
+        justify-content: center;
+    }
+
+    .table-text {
+        margin-bottom: -35px;
+    }
 }
 
 @media only screen and (max-width: 479px) {
@@ -898,4 +929,18 @@ div#myTable_paginate {
     .info__work {
         padding: 16px 12px;
     }
+
+    .table-text {
+        margin-bottom: 13px;
+        padding-left: 0;
+    }
+
+    .table-search {
+        width: 90%;
+    }
+
+    div#myTable_filter {
+        text-align: center;
+    }
+
 }
