@@ -363,6 +363,7 @@ ul {
 
 .input-field {
     flex: 0 1 50%;
+    position: relative;
 }
 
 .input-field input {
@@ -715,7 +716,28 @@ div#myTable_paginate {
      overflow: auto;
      padding: 20px 0;
  }
+#autocomplete-results-name, #autocomplete-results-job, #autocomplete-results-city {
+    position: absolute;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #f1f1f1;
+    z-index: 1;
+    display: none;
+}
 
+#autocomplete-results-name a, #autocomplete-results-job a, #autocomplete-results-city a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+#autocomplete-results-name a:hover, #autocomplete-results-job a:hover, #autocomplete-results-city a:hover {
+    background-color: var(--primary);
+    color: white;
+    padding-left: 20px;
+}
 @media only screen and (min-width: 1920px) {
     .salary-hero {
         padding-top: 51%;
